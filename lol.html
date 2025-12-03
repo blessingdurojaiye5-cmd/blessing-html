@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision - IT Company</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      color: #f5b400;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+    header p {
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: #1b1b1b;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    .feature h3 {
+      color: #f5b400;
+    }
+    .cta {
+      background-color: #f5b400;
+      color: #111;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background: #1b1b1b;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .member img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+
+      /* Mobile screen */
+    @media( width <=450px){
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: green;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      color: purple;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+    header p {
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: #1b1b1b;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    .feature h3 {
+      color: #f5b400;
+    }
+    .cta {
+      background-color: #f5b400;
+      color: #111;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background: #1b1b1b;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .member img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+    }
+
+      /* Ipad screen */
+    @media(width>450px) and (width<= 1150px){
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color:orangered
+    }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      color:olive;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+    header p {
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: #1b1b1b;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    .feature h3 {
+      color: #f5b400;
+    }
+    .cta {
+      background-color: #f5b400;
+      color: #111;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background: #1b1b1b;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .member img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+    }
+
+    /* Bigger screen */
+    @media(width>1150px){
+       body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background-color: #222;
+      text-align: center;
+      padding: 50px;
+    }
+    header h1 {
+      color: #f5b400;
+      font-size: 40px;
+      margin: 10px 0;
+    }
+    header p {
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature {
+      background: #1b1b1b;
+      padding: 20px;
+      width: 300px;
+      border-radius: 10px;
+    }
+    .feature h3 {
+      color: #f5b400;
+    }
+    .cta {
+      background-color: #f5b400;
+      color: #111;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .member {
+      background: #1b1b1b;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    .member img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vision</h1>
+    <p>We Provide Flexible IT Solutions</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Business Security</h3>
+        <p>Protect your data with top-tier solutions.</p>
+      </div>
+      <div class="feature">
+        <h3>Admin Panel</h3>
+        <p>Manage everything easily from one dashboard.</p>
+      </div>
+      <div class="feature">
+        <h3>24/7 Support</h3>
+        <p>Always available to help you anytime.</p>
+      </div>
+    </div>
+    <a href="#contact" class="cta">Contact Us</a>
+  </section>
+
+  <section>
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="member">
+        <img src="cake.jpg" alt="">
+        <h4>Nick Dowson</h4>
+        <p>CEO</p>
+      </div>
+      <div class="member">
+        <img src="cho.jpg" alt="">
+        <h4>Chocolate cake man</h4>
+        <p>Designer</p>
+      </div>
+      <div class="member">
+        <img src="/food.jpg" alt="Team Member">
+        <h4>Paul Perry</h4>
+        <p>Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vision. All rights reserved.</p>
+  </footer>
+</body>
+</html>

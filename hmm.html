@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sassland - SaaS Solution</title>
+  <link rel="stylesheet" href="../Fonts/css/all.min.css">
+
+
+
+</head>
+<style>
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    background: #111;
+    padding: 1rem 0;
+    border-bottom: 1px solid #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 300px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ff7a00;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #ff7a00;
+  }
+
+  /* Button */
+  .btn {
+    background-color: #ff7a00;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #e76a00;
+  }
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+  }
+
+  .hero-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .intro-badge {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid #ff7a00;
+    color: #ff7a00;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 span {
+    color: #ff7a00;
+  }
+
+  .hero p {
+    color: #bbb;
+    font-size: 20px
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background: #ff8c00;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    width: 250px;
+  }
+
+  .btn-primary:hover {
+    background: #ff9f1a;
+  }
+
+  .btn-outline {
+    border: 1px solid #ff8c00;
+    color: #ff8c00;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    width: 200px;
+    height: 50px;
+  }
+
+  .btn-outline:hover {
+    background: #ff8c00;
+    color: #fff;
+  }
+
+  .avatars {
+    display: flex;
+
+  }
+
+  .avatars img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #0c0c0c;
+    margin-left: -10px;
+  }
+
+  .users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #3b1d03 0%, #0b0b0b 70%);
+    color: #ffffff;
+  }
+
+  /* ==== Features Section ==== */
+  .features-section {
+    text-align: center;
+    padding: 60px 20px 100px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ==== Image Card ==== */
+  .image-card {
+    position: relative;
+    /* background-color: #1a1a1a; */
+    border-radius: 16px;
+    overflow: hidden;
+    display: inline-block;
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); */
+    margin-bottom: 50px;
+  }
+
+  .image-card img {
+    width: 1000px;
+    height: 1000px;
+    display: block;
+    border-radius: 16px;
+  }
+
+  /* ==== Orange Label on Image ==== */
+  .image-label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #ff7a29;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(255, 122, 41, 0.3);
+  }
+
+  /* ==== Text Content ==== */
+  .text-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .text-content h2 span {
+    color: #ff7a29;
+    /* Highlighted orange text */
+  }
+
+  .text-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .container-items{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid pink; */
+    gap: 70px;
+    justify-content: center;
+  }
+  .ok{
+    border: 2px solid rgb(48, 48, 54); ;
+    border-radius: 25px;
+    height: 100vh;
+    gap: 80px;
+    padding: 50px;
+  }
+  .pm li{
+    justify-content: left;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+  }
+  .zzzz{
+    /* border: 1px solid white; */
+    /* background-color: black; */
+    text-align: center;
+  }
+  .power span{
+    color: #ff8c00;
+  }
+  .ourr{
+    padding: 20px;
+  }
+  .contain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+.con{
+  border: solid rgb(48, 48, 54);
+  border-radius: 8px;
+  height: 150px;
+}
+.mum h1{
+  text-align: center;
+  font-size: 40px;
+}
+.mum span{
+  color: #ff8c00;
+
+
+}
+.mum p{
+  text-align: center;
+}
+.mum h2{
+  text-align: center;
+}
+.hmmm{
+  margin-top: 30px;
+}
+.tue h1{
+  text-align: center;
+  font-size: 40px;
+}
+.tue span{
+   color: #ff8c00;
+}
+.tue p{
+  text-align: center;
+}
+.bs{
+  border: solid 2px rgb(48, 48, 54);
+  border-radius: 20px;
+  text-align: left;
+  width: 400px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.bs h2{
+  font-style: inherit;
+  font-size: 15px;
+}
+.win{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  
+}
+.win img{
+  width: 30px;
+  border-radius: 70px;
+}
+.sec{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.it{
+  text-align: center;
+  margin-top: 30px;
+}
+.it span{
+  color: #ff8c00;
+
+}
+
+
+  /* ==== Responsive Styles ==== */
+  @media (max-width: 768px) {
+    .text-content h2 {
+      font-size: 1.8rem;
+    }
+
+    .text-content p {
+      font-size: 0.95rem;
+    }
+
+    .image-label {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  .can{
+    width: 90%;
+    max-width: 700px;
+    margin: 400px auto;
+    
+  }
+  .faq{
+    padding: 18px 0 ;
+    border-bottom: 1px solid rgba(255, 225, 225, 0.1);
+  }
+  .faq:last-child{
+    border-bottom: none;
+  }
+  .faq h3{
+    font-size: 18px;
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  .faq p{
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+  .first{
+    width: 1400px;
+    height: 450px;
+    max-width: 1200px;
+    margin: 500px auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background-color: rgba(165, 42, 42, 0.438);
+  }
+  .ned{
+    display: flex;
+    justify-content: space-around;
+  }
+  .trd{
+    /* border: solid 2px white ; */
+    margin-top: 100px;
+    
+    
+  }
+  .trd h2{
+    font-size: 40px;
+  }
+  .trd p{
+    margin-top: 10px;
+  }
+  .jjj img{
+    margin-top: 70px;
+    width: 120%;
+    margin-right: 30px;
+    border-radius: 20PX;
+    /* border: solid 2px white; */
+    
+  }
+  .omg{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: soild 1px#ff7a29  ;
+    background-color: #ff7a29;
+    color: white;
+  }
+  .kjv{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: soild 1px black  ;
+    background-color: black;
+    color: white;
+
+
+  }/* This styles the whole footer area */
+.footer {
+  background:black;   /* dark blue background */
+  color: white;          /* text color */
+  padding: 40px 20px;    /* space inside the footer */
+  margin-top: 50px;      /* space above footer */
+}
+
+/* This arranges the footer items side-by-side */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;       /* allows items to go to the next line on small screens */
+  gap: 40px;             /* space between the columns */
+}
+
+/* Left side (logo + text + socials) */
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* The logo text */
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color:#ff7a29 ;
+}
+
+/* Each column (Product, Company, Legal) */
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Column titles (Product, Company, Legal) */
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Links inside the footer */
+.footer-column a {
+  display: block;        /* each link appears on a new line */
+  color: #cbd5e1;
+  text-decoration: none;
+  margin: 6px 0;
+}
+
+.footer-column a:hover {
+  color: white;          /* color when you move your mouse over it */
+}
+
+/* Social links (FB, TW, etc.) */
+.social-links a {
+  margin-right: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+/* Bottom copyright line */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid #334155;  /* thin line above */
+  font-size: 14px;
+}
+.footer-bottom span{
+ color:#ff7a29 ; 
+}
+
+
+  
+
+</style>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Sassland</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Roadmap</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="intro-badge">Introducing Sassland 2.0</div>
+      <h1>Transform Your Business <br> With Our <span>SaaS Solution</span></h1>
+      <p>
+        Streamline your operations, boost productivity, and enhance customer <br>
+        satisfaction with our cutting-edge SaaS platform. Exprence seamless <br>intergration and
+        unparalled support.
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="btn-primary">Get Started Free →</a>
+      <a href="#" class="btn-outline">Book Demo</a>
+    </div>
+
+    <div class="users">
+      <div class="avatars">
+        <img src="cake.jpg" alt="User 1">
+        <img src="cho.jpg" alt="User 2">
+        <img src="cake.jpg" alt="User 3">
+      </div>
+      <p><span>500+</span> businesses already using our platform</p>
+    </div>
+  </section>
+
+
+  <section class="features-section">
+    <div class="image-card">
+      <img src="car.jpg" alt="Modern Dashboard Interface">
+      <div class="image-label">Modern Dashboard Interface</div>
+    </div>
+  </section>
+
+  <section class="zzzz">
+      <h2 class="power">Powerful <span>Features</span> to Boost Your Business</h2>
+      <p class="ourr">Our comprehensive suite of tools will help you streamline operations and achieve 
+        your business goals more <br> efficiently.</p>
+
+<div class="contain">
+  <div class="con">
+    <h1>Smart Analisis</h1>
+    <p>Gain valuable insights with our advanced <br> analytics, helping you make data-driven <br> decisions.</p>
+  </div>
+  <div class="con">
+    <h1>Easy intergration</h1>
+    <p>Seamless intergrate with your existing tools <br> and workflows. no distruption to your buiness</p>
+  </div>
+  <div class="con">
+    <h1>User Management</h1>
+    <p>Powerful user management and permission <br> controls to keep your data secure and <br> accessible</p>
+  </div>
+  <div class="con">
+    <h1>Customized Dashboard</h1>
+    <p>Create custom dashboard tailored to your <br>specific needs and business goals.</p>
+  </div>
+  <div class="con">
+    <h1>Task Scheduler</h1>
+    <p>Automate your workflows with powerful <br> task schedulling system.</p>
+  </div>
+  <div class="con">
+    <h1>Progress Tracking</h1>
+    <p>monitor your team's progress and <br> achievement with real time reporting.</p>
+  </div>
+</div>
+
+  </section>
+
+
+
+  <section class="hmmm">
+    <div class="mum">
+      <h1>Simple , <span>Transparent</span>  Pricing</h1>
+      <h2>Choose the plan that fits your  business needs. no hidden fees, no surprises.</h2>
+      <p>Annual {saves 20% }    monthly</p>
+    </div>
+  <div class="container-items">
+    <div class="ok">
+      <h1>Starter</h1>
+      <p>Perfect for small business and freelancers</p>
+      <h3>$15/month</h3>
+      <ul class="pm">
+        <li>2 team members</li>
+        <li>20gb cloud storage</li>
+        <li>basic analisis</li>
+        <li>email support</li>
+        <li>1 project</li>
+      </ul>
+      <div class="btn"> start with starter</div>
+    </div>
+
+    <div class="ok">
+      <h1>Starter</h1>
+      <p>Perfect for small business and freelancers</p>
+      <h3>$19/month</h3>
+      <ul class="pm">
+        <div class="BTN">Most popular</div>
+        <li>2 team members</li>
+        <li>20gb cloud storage</li>
+        <li>basic analisis</li>
+        <li>email support</li>
+        <li>1 project</li>
+      </ul>
+    </div>
+    <div class="ok">
+      <h1>Starter</h1>
+      <p>Perfect for small business and freelancers</p>
+      <h3>$15/month</h3>
+      <ul class="pm">
+        <li>2 team members</li>
+        <li>20gb cloud storage</li>
+        <li>basic analisis</li>
+        <li>email support</li>
+        <li>1 project</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="root">
+  <div class="tue">
+    <h1>Trusted by <span>Innovative</span>  Compaines</h1>
+    <p>Don't just take our word for it. here's what our customer have to say about Sassland.</p>
+  </div>
+  <div class="sec">
+  <div class="bs">
+    <p>"Implementing Sassland has been a game-changer for our team. The intuitive interface and Powerful
+       features have significantly improved our productivity and collaboration."</p>
+  
+
+    <div class="win">
+      <img src="cho.jpg" alt="">
+      <p>Serah Johnson <br>CTO,Techsolutions inc.</p>
+    </div>
+    </div>
+    <div class="bs">
+      <p>"The customer support team at Sassland is exceptional.
+         They've been incredibly responsive and helped us optimize our workflow to get the most out 
+         of the platform."</p>
+
+         <div class="win">
+          <img src="red.jpg" alt="">
+          <p>Michael Chen <br>
+Operations Director, Nexus Corp</p>
+         </div>
+    </div>
+    <div class="bs">
+      <p>"We've tried several SaaS platforms before, but Sassland offers the perfect balance of functionality and ease of use.
+         It's become an essential part of our daily operations."</p>
+         <div class="win">
+          <img src="cake.jpg" alt="">
+          <p>Emily Rodriguez
+
+Product Manager, Innovation Labs</p>
+
+         </div>
+    </div>
+   </div>
+</section>
+
+<section class="can">
+  <div class="it">
+  <h1>Frequently Asked <span> Questions</span> </h1>
+<p>Find answers to common questions about Sassland. If you can't find what you're looking for, feel free to <br>
+   contact our support team.</p>
+  </div>
+  <div class="faq">
+
+    <h3> How does this free trial work?</h3>
+      <p>Our free trial gives you full access to all Sassland features for 14 days. No credit card required. At the end of the <br>
+         trial, you can choose a plan that suits your needs or cancel without any charges.</p>
+  </div>
+  <div class="faq">
+    <h3>Can i change my plan later?</h3>
+    <p>Absolutely! You can upgrade, downgrade, or change your plan at any time. 
+      The changes will be reflected in your <br> next billing cycle.</p>
+  </div>
+  <div class="faq">
+    <h3>Is there a set up fee?</h3>
+    <p>No, there are no setup fees for any of our plans. You only pay the advertised subscription price.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Do you offer custom enterprise solutions?</h3>
+    <p>Yes, we offer custom enterprise solutions tailored to your specific needs.
+       Contact our sales team to discuss your <br> requirements and get a personalized quote.</p>
+  </div>
+  <div class="faq">
+    <h3>What kind of support do you offer?</h3>
+    <p>We offer email support for all plans. Our Professional plan includes priority email support,
+       while Enterprise <br> customers enjoy 24/7 dedicated support and a dedicated account manager.</p>
+  </div>
+  <div class="faq">
+    <h3>Can i cancel my subscription anytime?</h3>
+    <p>Yes, you can cancel your subscription at any time. If you cancel, you'll still have access
+       to your plan until the end  <br>of your current billing period.</p>
+  </div>
+
+
+</section>
+<section class="first">
+  <div class="ned">
+  <div class="trd">
+    <h2>Ready to transform your business?</h2>
+    <p>Join thousands of companies that are already streamlining their operations and <br> growing their business with Sassland. 
+      Start your free trial today.</p>
+      <button class="omg">start free trials</button>
+      <button class="kjv">schedle demo</button>
+
+      </div>
+      <div class="jjj">
+       <img src="cake.jpg" alt="">
+       </div>
+  
+</div>
+  
+  
+</div>
+
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT SIDE -->
+    <div class="footer-left">
+      <h2 class="footer-logo">Sassland</h2>
+      <p>
+        Transform your business with our cutting-edge SaaS solution designed for modern companies.
+      </p>
+
+      <div class="social-links">
+        <a href="#">FB</a>
+        <a href="#">TW</a>
+        <a href="#">IG</a>
+        <a href="#">GH</a>
+      </div>
+    </div>
+
+    <!-- PRODUCT COLUMN -->
+    <div class="footer-column">
+      <h3>Product</h3>
+      <a href="#">Home</a>
+      <a href="#">Roadmap</a>
+      <a href="#">Pricing</a>
+      <a href="#">Documentation</a>
+      <a href="#">Features</a>
+    </div>
+
+    <!-- COMPANY COLUMN -->
+    <div class="footer-column">
+      <h3>Company</h3>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <!-- LEGAL COLUMN -->
+    <div class="footer-column">
+      <h3>Legal</h3>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Cookie Policy</a>
+      <a href="#">GDPR</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2025 Sassland. All rights reserved. Built by Codescandy. Distributed by <span> ThemeWagon.</span></p>
+  </div>
+</footer>
+
+
+
+  
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sassland</title>
+  
+</head>
+<style>/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c0c0c;
+  color: #fff;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff8c00;
+}
+
+.menu {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.tagline {
+  display: inline-block;
+  background: rgba(255, 140, 0, 0.1);
+  color: #ff8c00;
+  border: 1px solid #ff8c00;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.hero h1 span {
+  color: #ff8c00;
+}
+
+.hero p {
+  color: #d3d3d3;
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background: #ff8c00;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  width: 250px;
+}
+
+.btn-primary:hover {
+  background: #ff9f1a;
+}
+
+.btn-outline {
+  border: 1px solid #ff8c00;
+  color: #ff8c00;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  width: 250px;
+}
+
+.btn-outline:hover {
+  background: #ff8c00;
+  color: #fff;
+}
+
+/* Social Proof */
+.social-proof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.avatars {
+  display: flex;
+  
+}
+
+.avatars img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #0c0c0c;
+  margin-left: -10px;
+}
+
+.social-proof p {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+}
+
+.social-proof span {
+  color: #ff8c00;
+  font-weight: 600;
+}
+.badge{
+   color: #ff8c00; 
+}
+
+
+
+
+
+</style>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Sassland</div>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="badge">Introducing Sassland 2.0</div>
+    <h1>Transform Your <br> Business With Our <br> <span>SaaS Solution</span></h1>
+    <p>Streamline your operations, boost <br> productivity, and enhance customer  <br> satisfaction with our cutting-edge SaaS <br> platform. Experience seamless <br> 
+        integration and unparalleled support.</p>
+    
+    <div class="buttons">
+      <a href="#" class="btn-primary">Get Started Free →</a>
+      <a href="#" class="btn-outline">Book Demo</a>
+    </div>
+
+    <div class="users">
+      <div class="avatars">
+        <img src="cake.jpg" alt="User 1">
+        <img src="cho.jpg" alt="User 2">
+        <img src="cake.jpg" alt="User 3">
+      </div>
+      <p><strong>500+</strong> businesses already using our platform</p>
+    </div>
+  </section>
+</body>
+</html>
